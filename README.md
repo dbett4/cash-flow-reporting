@@ -6,6 +6,8 @@ workbooks. Every reported amount traces to exact source coordinates and hashes.
 The case is a portfolio demonstration; it does not claim prior corporate filing
 ownership, a complete financial statement set, or accounting approval.
 
+![Fictional consolidated cash-flow statement with entity and elimination columns](docs/worked-example.png)
+
 ## Run the worked example
 
 Requires Python 3.11 or later and Rust 1.95.0. Rust 1.95.0 is the tested floor;
