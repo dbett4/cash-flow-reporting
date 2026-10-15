@@ -1,0 +1,49 @@
+{
+  "schema": "cash-flow-reporting.extraction.v1",
+  "origin": "Dave Bettner private reporting compiler; public subset authored and adapted by the owner",
+  "source_commit": "a94a5a1619b8e83d6a719bca2688d042d66eab0f",
+  "files": [
+    {
+      "original_path": "tools/report-compiler/src/main.rs",
+      "path": "tools/report-compiler/src/main.rs",
+      "original_sha256": "528838a586fe8db8f9f02130dd10d5a7000ca098fbf68f42b4a16576f773ecbf",
+      "extracted_sha256": "528838a586fe8db8f9f02130dd10d5a7000ca098fbf68f42b4a16576f773ecbf",
+      "adapted": false,
+      "adaptation": "Unchanged exact source."
+    },
+    {
+      "original_path": "tools/report-compiler/Cargo.toml",
+      "path": "tools/report-compiler/Cargo.toml",
+      "original_sha256": "08ddb9eee710f1ac1bf0088441cad365f8991e72ec937166d843f7939632aa73",
+      "extracted_sha256": "5304bf3bd1852828e1f3fad2f542d6baddbaa244f1213e43866c48da6c937cf9",
+      "adapted": true,
+      "adaptation": "Declared Rust1.95 tested floor; dependency declarations unchanged."
+    },
+    {
+      "original_path": "tools/report-compiler/Cargo.lock",
+      "path": "tools/report-compiler/Cargo.lock",
+      "original_sha256": "5c90b07935ceec4d3b96a4a2299bcc6faf4ed3f3df0138d996e2b2b1b9929b00",
+      "extracted_sha256": "5c90b07935ceec4d3b96a4a2299bcc6faf4ed3f3df0138d996e2b2b1b9929b00",
+      "adapted": false,
+      "adaptation": "Unchanged exact dependency lock."
+    },
+    {
+      "original_path": "scripts/acfr_report.py",
+      "path": "scripts/build_office.py",
+      "original_sha256": "507b30db233e4549354b36c309ebfb8e15c90860ff2245a6393995fae687ea8b",
+      "extracted_sha256": "65872f8bb9609f85e3bc9cb3f782e7196b071cde65bd6d8257c6f7d1ee25e5d6",
+      "adapted": true,
+      "adaptation": "Local-only wording; same-generation numeric OOXML formula caches and automatic full-recalculation request. No expression rewrite or new evaluator."
+    },
+    {
+      "original_path": "tests/test_acfr_report.py",
+      "path": "tests/test_compiler.py",
+      "original_sha256": "0d09e4845d226b7869c4e4448600b371c4a56c6cea2e3dbc0d060b3414ffaa38",
+      "extracted_sha256": "93f93f2dd1f989f44b831b3d6ecb629811f2fc7cf86baf71a54c70882db4cbdc",
+      "adapted": true,
+      "adaptation": "Preserved offline tests; removed four native-service-dependent tests and renamed local builder import."
+    }
+  ],
+  "excluded": "Native service adapters, recurring writers, private workbooks, client cases and their receipts are excluded.",
+  "rights": "No upstream open-source license was present for this extracted subset; no open-source license is implied. Original dependency notices remain governed by their respective licenses."
+}

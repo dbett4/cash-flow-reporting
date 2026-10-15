@@ -1,0 +1,2496 @@
+{
+  "schema": "acfr.report_manifest.v1",
+  "fiscal_year": 2025,
+  "sources": [
+    {
+      "id": "parent",
+      "path": "parent.xlsx",
+      "sha256": "87700cda21b3169963beedadaa517941a229f6a36e5ded46cf8792296246754a",
+      "sheet": "Source",
+      "period_cell": "B1"
+    },
+    {
+      "id": "subsidiary",
+      "path": "subsidiary.xlsx",
+      "sha256": "eff6707cd55c3536a23e208f121952d15829d3fa69f4e8c592b8a942a4d71390",
+      "sheet": "Source",
+      "period_cell": "B1"
+    },
+    {
+      "id": "bank",
+      "path": "bank.xlsx",
+      "sha256": "37eab91a19d2b0490de3bd80b42ceeefdee9c1a763337dd68c743edcc9a7e22a",
+      "sheet": "Source",
+      "period_cell": "B1"
+    }
+  ],
+  "facts": [
+    {
+      "id": "parent_net_income",
+      "source": "parent",
+      "cell": "B5",
+      "anchors": {
+        "A5": "Net income",
+        "A1": "Fiscal year ended June 30",
+        "B2": "2024-07-01",
+        "B3": "2025-06-30",
+        "B4": "Harbor Tools Inc."
+      }
+    },
+    {
+      "id": "parent_depreciation",
+      "source": "parent",
+      "cell": "B6",
+      "anchors": {
+        "A6": "Depreciation",
+        "A1": "Fiscal year ended June 30",
+        "B2": "2024-07-01",
+        "B3": "2025-06-30",
+        "B4": "Harbor Tools Inc."
+      }
+    },
+    {
+      "id": "parent_receivables_increase",
+      "source": "parent",
+      "cell": "B7",
+      "anchors": {
+        "A7": "Receivables increase",
+        "A1": "Fiscal year ended June 30",
+        "B2": "2024-07-01",
+        "B3": "2025-06-30",
+        "B4": "Harbor Tools Inc."
+      }
+    },
+    {
+      "id": "parent_inventory_increase",
+      "source": "parent",
+      "cell": "B8",
+      "anchors": {
+        "A8": "Inventory increase",
+        "A1": "Fiscal year ended June 30",
+        "B2": "2024-07-01",
+        "B3": "2025-06-30",
+        "B4": "Harbor Tools Inc."
+      }
+    },
+    {
+      "id": "parent_payables_increase",
+      "source": "parent",
+      "cell": "B9",
+      "anchors": {
+        "A9": "Payables increase",
+        "A1": "Fiscal year ended June 30",
+        "B2": "2024-07-01",
+        "B3": "2025-06-30",
+        "B4": "Harbor Tools Inc."
+      }
+    },
+    {
+      "id": "parent_cash_equipment_purchases",
+      "source": "parent",
+      "cell": "B10",
+      "anchors": {
+        "A10": "Cash equipment purchases",
+        "A1": "Fiscal year ended June 30",
+        "B2": "2024-07-01",
+        "B3": "2025-06-30",
+        "B4": "Harbor Tools Inc."
+      }
+    },
+    {
+      "id": "parent_intercompany_loan_advanced",
+      "source": "parent",
+      "cell": "B11",
+      "anchors": {
+        "A11": "Intercompany loan advanced",
+        "A1": "Fiscal year ended June 30",
+        "B2": "2024-07-01",
+        "B3": "2025-06-30",
+        "B4": "Harbor Tools Inc."
+      }
+    },
+    {
+      "id": "parent_intercompany_loan_received",
+      "source": "parent",
+      "cell": "B12",
+      "anchors": {
+        "A12": "Intercompany loan received",
+        "A1": "Fiscal year ended June 30",
+        "B2": "2024-07-01",
+        "B3": "2025-06-30",
+        "B4": "Harbor Tools Inc."
+      }
+    },
+    {
+      "id": "parent_external_debt_proceeds",
+      "source": "parent",
+      "cell": "B13",
+      "anchors": {
+        "A13": "External debt proceeds",
+        "A1": "Fiscal year ended June 30",
+        "B2": "2024-07-01",
+        "B3": "2025-06-30",
+        "B4": "Harbor Tools Inc."
+      }
+    },
+    {
+      "id": "parent_external_debt_repayments",
+      "source": "parent",
+      "cell": "B14",
+      "anchors": {
+        "A14": "External debt repayments",
+        "A1": "Fiscal year ended June 30",
+        "B2": "2024-07-01",
+        "B3": "2025-06-30",
+        "B4": "Harbor Tools Inc."
+      }
+    },
+    {
+      "id": "parent_dividends_paid",
+      "source": "parent",
+      "cell": "B15",
+      "anchors": {
+        "A15": "Dividends paid",
+        "A1": "Fiscal year ended June 30",
+        "B2": "2024-07-01",
+        "B3": "2025-06-30",
+        "B4": "Harbor Tools Inc."
+      }
+    },
+    {
+      "id": "parent_noncash_equipment_seller_note",
+      "source": "parent",
+      "cell": "B16",
+      "anchors": {
+        "A16": "Noncash equipment seller note",
+        "A1": "Fiscal year ended June 30",
+        "B2": "2024-07-01",
+        "B3": "2025-06-30",
+        "B4": "Harbor Tools Inc."
+      }
+    },
+    {
+      "id": "parent_cash_beginning",
+      "source": "parent",
+      "cell": "B17",
+      "anchors": {
+        "A17": "Cash beginning",
+        "A1": "Fiscal year ended June 30",
+        "B2": "2024-07-01",
+        "B3": "2025-06-30",
+        "B4": "Harbor Tools Inc."
+      }
+    },
+    {
+      "id": "parent_restricted_cash_beginning",
+      "source": "parent",
+      "cell": "B18",
+      "anchors": {
+        "A18": "Restricted cash beginning",
+        "A1": "Fiscal year ended June 30",
+        "B2": "2024-07-01",
+        "B3": "2025-06-30",
+        "B4": "Harbor Tools Inc."
+      }
+    },
+    {
+      "id": "parent_cash_ending",
+      "source": "parent",
+      "cell": "B19",
+      "anchors": {
+        "A19": "Cash ending",
+        "A1": "Fiscal year ended June 30",
+        "B2": "2024-07-01",
+        "B3": "2025-06-30",
+        "B4": "Harbor Tools Inc."
+      }
+    },
+    {
+      "id": "parent_restricted_cash_ending",
+      "source": "parent",
+      "cell": "B20",
+      "anchors": {
+        "A20": "Restricted cash ending",
+        "A1": "Fiscal year ended June 30",
+        "B2": "2024-07-01",
+        "B3": "2025-06-30",
+        "B4": "Harbor Tools Inc."
+      }
+    },
+    {
+      "id": "parent_external_debt_beginning",
+      "source": "parent",
+      "cell": "B21",
+      "anchors": {
+        "A21": "External debt beginning",
+        "A1": "Fiscal year ended June 30",
+        "B2": "2024-07-01",
+        "B3": "2025-06-30",
+        "B4": "Harbor Tools Inc."
+      }
+    },
+    {
+      "id": "parent_external_debt_ending",
+      "source": "parent",
+      "cell": "B22",
+      "anchors": {
+        "A22": "External debt ending",
+        "A1": "Fiscal year ended June 30",
+        "B2": "2024-07-01",
+        "B3": "2025-06-30",
+        "B4": "Harbor Tools Inc."
+      }
+    },
+    {
+      "id": "parent_ppe_net_beginning",
+      "source": "parent",
+      "cell": "B23",
+      "anchors": {
+        "A23": "Ppe net beginning",
+        "A1": "Fiscal year ended June 30",
+        "B2": "2024-07-01",
+        "B3": "2025-06-30",
+        "B4": "Harbor Tools Inc."
+      }
+    },
+    {
+      "id": "parent_ppe_net_ending",
+      "source": "parent",
+      "cell": "B24",
+      "anchors": {
+        "A24": "Ppe net ending",
+        "A1": "Fiscal year ended June 30",
+        "B2": "2024-07-01",
+        "B3": "2025-06-30",
+        "B4": "Harbor Tools Inc."
+      }
+    },
+    {
+      "id": "parent_cash_interest_paid",
+      "source": "parent",
+      "cell": "B25",
+      "anchors": {
+        "A25": "Cash interest paid",
+        "A1": "Fiscal year ended June 30",
+        "B2": "2024-07-01",
+        "B3": "2025-06-30",
+        "B4": "Harbor Tools Inc."
+      }
+    },
+    {
+      "id": "parent_cash_income_taxes_paid",
+      "source": "parent",
+      "cell": "B26",
+      "anchors": {
+        "A26": "Cash income taxes paid",
+        "A1": "Fiscal year ended June 30",
+        "B2": "2024-07-01",
+        "B3": "2025-06-30",
+        "B4": "Harbor Tools Inc."
+      }
+    },
+    {
+      "id": "subsidiary_net_income",
+      "source": "subsidiary",
+      "cell": "B5",
+      "anchors": {
+        "A5": "Net income",
+        "A1": "Fiscal year ended June 30",
+        "B2": "2024-07-01",
+        "B3": "2025-06-30",
+        "B4": "Harbor Parts LLC"
+      }
+    },
+    {
+      "id": "subsidiary_depreciation",
+      "source": "subsidiary",
+      "cell": "B6",
+      "anchors": {
+        "A6": "Depreciation",
+        "A1": "Fiscal year ended June 30",
+        "B2": "2024-07-01",
+        "B3": "2025-06-30",
+        "B4": "Harbor Parts LLC"
+      }
+    },
+    {
+      "id": "subsidiary_receivables_increase",
+      "source": "subsidiary",
+      "cell": "B7",
+      "anchors": {
+        "A7": "Receivables increase",
+        "A1": "Fiscal year ended June 30",
+        "B2": "2024-07-01",
+        "B3": "2025-06-30",
+        "B4": "Harbor Parts LLC"
+      }
+    },
+    {
+      "id": "subsidiary_inventory_increase",
+      "source": "subsidiary",
+      "cell": "B8",
+      "anchors": {
+        "A8": "Inventory increase",
+        "A1": "Fiscal year ended June 30",
+        "B2": "2024-07-01",
+        "B3": "2025-06-30",
+        "B4": "Harbor Parts LLC"
+      }
+    },
+    {
+      "id": "subsidiary_payables_increase",
+      "source": "subsidiary",
+      "cell": "B9",
+      "anchors": {
+        "A9": "Payables increase",
+        "A1": "Fiscal year ended June 30",
+        "B2": "2024-07-01",
+        "B3": "2025-06-30",
+        "B4": "Harbor Parts LLC"
+      }
+    },
+    {
+      "id": "subsidiary_cash_equipment_purchases",
+      "source": "subsidiary",
+      "cell": "B10",
+      "anchors": {
+        "A10": "Cash equipment purchases",
+        "A1": "Fiscal year ended June 30",
+        "B2": "2024-07-01",
+        "B3": "2025-06-30",
+        "B4": "Harbor Parts LLC"
+      }
+    },
+    {
+      "id": "subsidiary_intercompany_loan_advanced",
+      "source": "subsidiary",
+      "cell": "B11",
+      "anchors": {
+        "A11": "Intercompany loan advanced",
+        "A1": "Fiscal year ended June 30",
+        "B2": "2024-07-01",
+        "B3": "2025-06-30",
+        "B4": "Harbor Parts LLC"
+      }
+    },
+    {
+      "id": "subsidiary_intercompany_loan_received",
+      "source": "subsidiary",
+      "cell": "B12",
+      "anchors": {
+        "A12": "Intercompany loan received",
+        "A1": "Fiscal year ended June 30",
+        "B2": "2024-07-01",
+        "B3": "2025-06-30",
+        "B4": "Harbor Parts LLC"
+      }
+    },
+    {
+      "id": "subsidiary_external_debt_proceeds",
+      "source": "subsidiary",
+      "cell": "B13",
+      "anchors": {
+        "A13": "External debt proceeds",
+        "A1": "Fiscal year ended June 30",
+        "B2": "2024-07-01",
+        "B3": "2025-06-30",
+        "B4": "Harbor Parts LLC"
+      }
+    },
+    {
+      "id": "subsidiary_external_debt_repayments",
+      "source": "subsidiary",
+      "cell": "B14",
+      "anchors": {
+        "A14": "External debt repayments",
+        "A1": "Fiscal year ended June 30",
+        "B2": "2024-07-01",
+        "B3": "2025-06-30",
+        "B4": "Harbor Parts LLC"
+      }
+    },
+    {
+      "id": "subsidiary_dividends_paid",
+      "source": "subsidiary",
+      "cell": "B15",
+      "anchors": {
+        "A15": "Dividends paid",
+        "A1": "Fiscal year ended June 30",
+        "B2": "2024-07-01",
+        "B3": "2025-06-30",
+        "B4": "Harbor Parts LLC"
+      }
+    },
+    {
+      "id": "subsidiary_noncash_equipment_seller_note",
+      "source": "subsidiary",
+      "cell": "B16",
+      "anchors": {
+        "A16": "Noncash equipment seller note",
+        "A1": "Fiscal year ended June 30",
+        "B2": "2024-07-01",
+        "B3": "2025-06-30",
+        "B4": "Harbor Parts LLC"
+      }
+    },
+    {
+      "id": "subsidiary_cash_beginning",
+      "source": "subsidiary",
+      "cell": "B17",
+      "anchors": {
+        "A17": "Cash beginning",
+        "A1": "Fiscal year ended June 30",
+        "B2": "2024-07-01",
+        "B3": "2025-06-30",
+        "B4": "Harbor Parts LLC"
+      }
+    },
+    {
+      "id": "subsidiary_restricted_cash_beginning",
+      "source": "subsidiary",
+      "cell": "B18",
+      "anchors": {
+        "A18": "Restricted cash beginning",
+        "A1": "Fiscal year ended June 30",
+        "B2": "2024-07-01",
+        "B3": "2025-06-30",
+        "B4": "Harbor Parts LLC"
+      }
+    },
+    {
+      "id": "subsidiary_cash_ending",
+      "source": "subsidiary",
+      "cell": "B19",
+      "anchors": {
+        "A19": "Cash ending",
+        "A1": "Fiscal year ended June 30",
+        "B2": "2024-07-01",
+        "B3": "2025-06-30",
+        "B4": "Harbor Parts LLC"
+      }
+    },
+    {
+      "id": "subsidiary_restricted_cash_ending",
+      "source": "subsidiary",
+      "cell": "B20",
+      "anchors": {
+        "A20": "Restricted cash ending",
+        "A1": "Fiscal year ended June 30",
+        "B2": "2024-07-01",
+        "B3": "2025-06-30",
+        "B4": "Harbor Parts LLC"
+      }
+    },
+    {
+      "id": "subsidiary_external_debt_beginning",
+      "source": "subsidiary",
+      "cell": "B21",
+      "anchors": {
+        "A21": "External debt beginning",
+        "A1": "Fiscal year ended June 30",
+        "B2": "2024-07-01",
+        "B3": "2025-06-30",
+        "B4": "Harbor Parts LLC"
+      }
+    },
+    {
+      "id": "subsidiary_external_debt_ending",
+      "source": "subsidiary",
+      "cell": "B22",
+      "anchors": {
+        "A22": "External debt ending",
+        "A1": "Fiscal year ended June 30",
+        "B2": "2024-07-01",
+        "B3": "2025-06-30",
+        "B4": "Harbor Parts LLC"
+      }
+    },
+    {
+      "id": "subsidiary_ppe_net_beginning",
+      "source": "subsidiary",
+      "cell": "B23",
+      "anchors": {
+        "A23": "Ppe net beginning",
+        "A1": "Fiscal year ended June 30",
+        "B2": "2024-07-01",
+        "B3": "2025-06-30",
+        "B4": "Harbor Parts LLC"
+      }
+    },
+    {
+      "id": "subsidiary_ppe_net_ending",
+      "source": "subsidiary",
+      "cell": "B24",
+      "anchors": {
+        "A24": "Ppe net ending",
+        "A1": "Fiscal year ended June 30",
+        "B2": "2024-07-01",
+        "B3": "2025-06-30",
+        "B4": "Harbor Parts LLC"
+      }
+    },
+    {
+      "id": "subsidiary_cash_interest_paid",
+      "source": "subsidiary",
+      "cell": "B25",
+      "anchors": {
+        "A25": "Cash interest paid",
+        "A1": "Fiscal year ended June 30",
+        "B2": "2024-07-01",
+        "B3": "2025-06-30",
+        "B4": "Harbor Parts LLC"
+      }
+    },
+    {
+      "id": "subsidiary_cash_income_taxes_paid",
+      "source": "subsidiary",
+      "cell": "B26",
+      "anchors": {
+        "A26": "Cash income taxes paid",
+        "A1": "Fiscal year ended June 30",
+        "B2": "2024-07-01",
+        "B3": "2025-06-30",
+        "B4": "Harbor Parts LLC"
+      }
+    },
+    {
+      "id": "bank_cash_and_restricted_cash_ending",
+      "source": "bank",
+      "cell": "B5",
+      "anchors": {
+        "A5": "Cash and restricted cash ending",
+        "A1": "Fiscal year ended June 30",
+        "B2": "2024-07-01",
+        "B3": "2025-06-30",
+        "B4": "Separate fictional bank control"
+      }
+    }
+  ],
+  "columns": [
+    {
+      "id": "parent",
+      "label": "Parent"
+    },
+    {
+      "id": "subsidiary",
+      "label": "Subsidiary"
+    },
+    {
+      "id": "eliminations",
+      "label": "Eliminations"
+    },
+    {
+      "id": "consolidated",
+      "label": "Consolidated"
+    }
+  ],
+  "sections": [
+    {
+      "id": "cash_flows",
+      "title": "Statement of cash flows \u2014 indirect method (USD)",
+      "rows": [
+        {
+          "id": "net_income",
+          "label": "Net income",
+          "decimals": 2,
+          "values": {
+            "parent": {
+              "kind": "fact",
+              "id": "parent_net_income"
+            },
+            "subsidiary": {
+              "kind": "fact",
+              "id": "subsidiary_net_income"
+            },
+            "eliminations": {
+              "kind": "zero",
+              "reason": "No activity under the fictional case policy"
+            },
+            "consolidated": {
+              "kind": "sum",
+              "terms": [
+                {
+                  "kind": "reference",
+                  "section": "cash_flows",
+                  "row": "net_income",
+                  "column": "parent"
+                },
+                {
+                  "kind": "reference",
+                  "section": "cash_flows",
+                  "row": "net_income",
+                  "column": "subsidiary"
+                },
+                {
+                  "kind": "reference",
+                  "section": "cash_flows",
+                  "row": "net_income",
+                  "column": "eliminations"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": "depreciation",
+          "label": "Depreciation",
+          "decimals": 2,
+          "values": {
+            "parent": {
+              "kind": "fact",
+              "id": "parent_depreciation"
+            },
+            "subsidiary": {
+              "kind": "fact",
+              "id": "subsidiary_depreciation"
+            },
+            "eliminations": {
+              "kind": "zero",
+              "reason": "No activity under the fictional case policy"
+            },
+            "consolidated": {
+              "kind": "sum",
+              "terms": [
+                {
+                  "kind": "reference",
+                  "section": "cash_flows",
+                  "row": "depreciation",
+                  "column": "parent"
+                },
+                {
+                  "kind": "reference",
+                  "section": "cash_flows",
+                  "row": "depreciation",
+                  "column": "subsidiary"
+                },
+                {
+                  "kind": "reference",
+                  "section": "cash_flows",
+                  "row": "depreciation",
+                  "column": "eliminations"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": "receivables",
+          "label": "Increase in trade receivables",
+          "decimals": 2,
+          "values": {
+            "parent": {
+              "kind": "difference",
+              "left": {
+                "kind": "zero",
+                "reason": "No activity under the fictional case policy"
+              },
+              "right": {
+                "kind": "fact",
+                "id": "parent_receivables_increase"
+              }
+            },
+            "subsidiary": {
+              "kind": "difference",
+              "left": {
+                "kind": "zero",
+                "reason": "No activity under the fictional case policy"
+              },
+              "right": {
+                "kind": "fact",
+                "id": "subsidiary_receivables_increase"
+              }
+            },
+            "eliminations": {
+              "kind": "zero",
+              "reason": "No activity under the fictional case policy"
+            },
+            "consolidated": {
+              "kind": "sum",
+              "terms": [
+                {
+                  "kind": "reference",
+                  "section": "cash_flows",
+                  "row": "receivables",
+                  "column": "parent"
+                },
+                {
+                  "kind": "reference",
+                  "section": "cash_flows",
+                  "row": "receivables",
+                  "column": "subsidiary"
+                },
+                {
+                  "kind": "reference",
+                  "section": "cash_flows",
+                  "row": "receivables",
+                  "column": "eliminations"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": "inventory",
+          "label": "Increase in inventory",
+          "decimals": 2,
+          "values": {
+            "parent": {
+              "kind": "difference",
+              "left": {
+                "kind": "zero",
+                "reason": "No activity under the fictional case policy"
+              },
+              "right": {
+                "kind": "fact",
+                "id": "parent_inventory_increase"
+              }
+            },
+            "subsidiary": {
+              "kind": "difference",
+              "left": {
+                "kind": "zero",
+                "reason": "No activity under the fictional case policy"
+              },
+              "right": {
+                "kind": "fact",
+                "id": "subsidiary_inventory_increase"
+              }
+            },
+            "eliminations": {
+              "kind": "zero",
+              "reason": "No activity under the fictional case policy"
+            },
+            "consolidated": {
+              "kind": "sum",
+              "terms": [
+                {
+                  "kind": "reference",
+                  "section": "cash_flows",
+                  "row": "inventory",
+                  "column": "parent"
+                },
+                {
+                  "kind": "reference",
+                  "section": "cash_flows",
+                  "row": "inventory",
+                  "column": "subsidiary"
+                },
+                {
+                  "kind": "reference",
+                  "section": "cash_flows",
+                  "row": "inventory",
+                  "column": "eliminations"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": "payables",
+          "label": "Increase in trade payables",
+          "decimals": 2,
+          "values": {
+            "parent": {
+              "kind": "fact",
+              "id": "parent_payables_increase"
+            },
+            "subsidiary": {
+              "kind": "fact",
+              "id": "subsidiary_payables_increase"
+            },
+            "eliminations": {
+              "kind": "zero",
+              "reason": "No activity under the fictional case policy"
+            },
+            "consolidated": {
+              "kind": "sum",
+              "terms": [
+                {
+                  "kind": "reference",
+                  "section": "cash_flows",
+                  "row": "payables",
+                  "column": "parent"
+                },
+                {
+                  "kind": "reference",
+                  "section": "cash_flows",
+                  "row": "payables",
+                  "column": "subsidiary"
+                },
+                {
+                  "kind": "reference",
+                  "section": "cash_flows",
+                  "row": "payables",
+                  "column": "eliminations"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": "operating",
+          "label": "Net cash provided by operating activities",
+          "decimals": 2,
+          "values": {
+            "parent": {
+              "kind": "sum",
+              "terms": [
+                {
+                  "kind": "reference",
+                  "section": "cash_flows",
+                  "row": "net_income",
+                  "column": "parent"
+                },
+                {
+                  "kind": "reference",
+                  "section": "cash_flows",
+                  "row": "depreciation",
+                  "column": "parent"
+                },
+                {
+                  "kind": "reference",
+                  "section": "cash_flows",
+                  "row": "receivables",
+                  "column": "parent"
+                },
+                {
+                  "kind": "reference",
+                  "section": "cash_flows",
+                  "row": "inventory",
+                  "column": "parent"
+                },
+                {
+                  "kind": "reference",
+                  "section": "cash_flows",
+                  "row": "payables",
+                  "column": "parent"
+                }
+              ]
+            },
+            "subsidiary": {
+              "kind": "sum",
+              "terms": [
+                {
+                  "kind": "reference",
+                  "section": "cash_flows",
+                  "row": "net_income",
+                  "column": "subsidiary"
+                },
+                {
+                  "kind": "reference",
+                  "section": "cash_flows",
+                  "row": "depreciation",
+                  "column": "subsidiary"
+                },
+                {
+                  "kind": "reference",
+                  "section": "cash_flows",
+                  "row": "receivables",
+                  "column": "subsidiary"
+                },
+                {
+                  "kind": "reference",
+                  "section": "cash_flows",
+                  "row": "inventory",
+                  "column": "subsidiary"
+                },
+                {
+                  "kind": "reference",
+                  "section": "cash_flows",
+                  "row": "payables",
+                  "column": "subsidiary"
+                }
+              ]
+            },
+            "eliminations": {
+              "kind": "sum",
+              "terms": [
+                {
+                  "kind": "reference",
+                  "section": "cash_flows",
+                  "row": "net_income",
+                  "column": "eliminations"
+                },
+                {
+                  "kind": "reference",
+                  "section": "cash_flows",
+                  "row": "depreciation",
+                  "column": "eliminations"
+                },
+                {
+                  "kind": "reference",
+                  "section": "cash_flows",
+                  "row": "receivables",
+                  "column": "eliminations"
+                },
+                {
+                  "kind": "reference",
+                  "section": "cash_flows",
+                  "row": "inventory",
+                  "column": "eliminations"
+                },
+                {
+                  "kind": "reference",
+                  "section": "cash_flows",
+                  "row": "payables",
+                  "column": "eliminations"
+                }
+              ]
+            },
+            "consolidated": {
+              "kind": "sum",
+              "terms": [
+                {
+                  "kind": "reference",
+                  "section": "cash_flows",
+                  "row": "net_income",
+                  "column": "consolidated"
+                },
+                {
+                  "kind": "reference",
+                  "section": "cash_flows",
+                  "row": "depreciation",
+                  "column": "consolidated"
+                },
+                {
+                  "kind": "reference",
+                  "section": "cash_flows",
+                  "row": "receivables",
+                  "column": "consolidated"
+                },
+                {
+                  "kind": "reference",
+                  "section": "cash_flows",
+                  "row": "inventory",
+                  "column": "consolidated"
+                },
+                {
+                  "kind": "reference",
+                  "section": "cash_flows",
+                  "row": "payables",
+                  "column": "consolidated"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": "equipment",
+          "label": "Cash purchases of equipment",
+          "decimals": 2,
+          "values": {
+            "parent": {
+              "kind": "difference",
+              "left": {
+                "kind": "zero",
+                "reason": "No activity under the fictional case policy"
+              },
+              "right": {
+                "kind": "fact",
+                "id": "parent_cash_equipment_purchases"
+              }
+            },
+            "subsidiary": {
+              "kind": "difference",
+              "left": {
+                "kind": "zero",
+                "reason": "No activity under the fictional case policy"
+              },
+              "right": {
+                "kind": "fact",
+                "id": "subsidiary_cash_equipment_purchases"
+              }
+            },
+            "eliminations": {
+              "kind": "zero",
+              "reason": "No activity under the fictional case policy"
+            },
+            "consolidated": {
+              "kind": "sum",
+              "terms": [
+                {
+                  "kind": "reference",
+                  "section": "cash_flows",
+                  "row": "equipment",
+                  "column": "parent"
+                },
+                {
+                  "kind": "reference",
+                  "section": "cash_flows",
+                  "row": "equipment",
+                  "column": "subsidiary"
+                },
+                {
+                  "kind": "reference",
+                  "section": "cash_flows",
+                  "row": "equipment",
+                  "column": "eliminations"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": "internal_lending",
+          "label": "Loan advanced to subsidiary (eliminated)",
+          "decimals": 2,
+          "values": {
+            "parent": {
+              "kind": "difference",
+              "left": {
+                "kind": "zero",
+                "reason": "No activity under the fictional case policy"
+              },
+              "right": {
+                "kind": "fact",
+                "id": "parent_intercompany_loan_advanced"
+              }
+            },
+            "subsidiary": {
+              "kind": "difference",
+              "left": {
+                "kind": "zero",
+                "reason": "No activity under the fictional case policy"
+              },
+              "right": {
+                "kind": "fact",
+                "id": "subsidiary_intercompany_loan_advanced"
+              }
+            },
+            "eliminations": {
+              "kind": "fact",
+              "id": "parent_intercompany_loan_advanced"
+            },
+            "consolidated": {
+              "kind": "sum",
+              "terms": [
+                {
+                  "kind": "reference",
+                  "section": "cash_flows",
+                  "row": "internal_lending",
+                  "column": "parent"
+                },
+                {
+                  "kind": "reference",
+                  "section": "cash_flows",
+                  "row": "internal_lending",
+                  "column": "subsidiary"
+                },
+                {
+                  "kind": "reference",
+                  "section": "cash_flows",
+                  "row": "internal_lending",
+                  "column": "eliminations"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": "investing",
+          "label": "Net cash used in investing activities",
+          "decimals": 2,
+          "values": {
+            "parent": {
+              "kind": "sum",
+              "terms": [
+                {
+                  "kind": "reference",
+                  "section": "cash_flows",
+                  "row": "equipment",
+                  "column": "parent"
+                },
+                {
+                  "kind": "reference",
+                  "section": "cash_flows",
+                  "row": "internal_lending",
+                  "column": "parent"
+                }
+              ]
+            },
+            "subsidiary": {
+              "kind": "sum",
+              "terms": [
+                {
+                  "kind": "reference",
+                  "section": "cash_flows",
+                  "row": "equipment",
+                  "column": "subsidiary"
+                },
+                {
+                  "kind": "reference",
+                  "section": "cash_flows",
+                  "row": "internal_lending",
+                  "column": "subsidiary"
+                }
+              ]
+            },
+            "eliminations": {
+              "kind": "sum",
+              "terms": [
+                {
+                  "kind": "reference",
+                  "section": "cash_flows",
+                  "row": "equipment",
+                  "column": "eliminations"
+                },
+                {
+                  "kind": "reference",
+                  "section": "cash_flows",
+                  "row": "internal_lending",
+                  "column": "eliminations"
+                }
+              ]
+            },
+            "consolidated": {
+              "kind": "sum",
+              "terms": [
+                {
+                  "kind": "reference",
+                  "section": "cash_flows",
+                  "row": "equipment",
+                  "column": "consolidated"
+                },
+                {
+                  "kind": "reference",
+                  "section": "cash_flows",
+                  "row": "internal_lending",
+                  "column": "consolidated"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": "debt_proceeds",
+          "label": "Proceeds from external borrowing",
+          "decimals": 2,
+          "values": {
+            "parent": {
+              "kind": "fact",
+              "id": "parent_external_debt_proceeds"
+            },
+            "subsidiary": {
+              "kind": "fact",
+              "id": "subsidiary_external_debt_proceeds"
+            },
+            "eliminations": {
+              "kind": "zero",
+              "reason": "No activity under the fictional case policy"
+            },
+            "consolidated": {
+              "kind": "sum",
+              "terms": [
+                {
+                  "kind": "reference",
+                  "section": "cash_flows",
+                  "row": "debt_proceeds",
+                  "column": "parent"
+                },
+                {
+                  "kind": "reference",
+                  "section": "cash_flows",
+                  "row": "debt_proceeds",
+                  "column": "subsidiary"
+                },
+                {
+                  "kind": "reference",
+                  "section": "cash_flows",
+                  "row": "debt_proceeds",
+                  "column": "eliminations"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": "debt_repayments",
+          "label": "Principal repayments of external debt",
+          "decimals": 2,
+          "values": {
+            "parent": {
+              "kind": "difference",
+              "left": {
+                "kind": "zero",
+                "reason": "No activity under the fictional case policy"
+              },
+              "right": {
+                "kind": "fact",
+                "id": "parent_external_debt_repayments"
+              }
+            },
+            "subsidiary": {
+              "kind": "difference",
+              "left": {
+                "kind": "zero",
+                "reason": "No activity under the fictional case policy"
+              },
+              "right": {
+                "kind": "fact",
+                "id": "subsidiary_external_debt_repayments"
+              }
+            },
+            "eliminations": {
+              "kind": "zero",
+              "reason": "No activity under the fictional case policy"
+            },
+            "consolidated": {
+              "kind": "sum",
+              "terms": [
+                {
+                  "kind": "reference",
+                  "section": "cash_flows",
+                  "row": "debt_repayments",
+                  "column": "parent"
+                },
+                {
+                  "kind": "reference",
+                  "section": "cash_flows",
+                  "row": "debt_repayments",
+                  "column": "subsidiary"
+                },
+                {
+                  "kind": "reference",
+                  "section": "cash_flows",
+                  "row": "debt_repayments",
+                  "column": "eliminations"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": "dividends",
+          "label": "Dividends paid to external shareholders",
+          "decimals": 2,
+          "values": {
+            "parent": {
+              "kind": "difference",
+              "left": {
+                "kind": "zero",
+                "reason": "No activity under the fictional case policy"
+              },
+              "right": {
+                "kind": "fact",
+                "id": "parent_dividends_paid"
+              }
+            },
+            "subsidiary": {
+              "kind": "difference",
+              "left": {
+                "kind": "zero",
+                "reason": "No activity under the fictional case policy"
+              },
+              "right": {
+                "kind": "fact",
+                "id": "subsidiary_dividends_paid"
+              }
+            },
+            "eliminations": {
+              "kind": "zero",
+              "reason": "No activity under the fictional case policy"
+            },
+            "consolidated": {
+              "kind": "sum",
+              "terms": [
+                {
+                  "kind": "reference",
+                  "section": "cash_flows",
+                  "row": "dividends",
+                  "column": "parent"
+                },
+                {
+                  "kind": "reference",
+                  "section": "cash_flows",
+                  "row": "dividends",
+                  "column": "subsidiary"
+                },
+                {
+                  "kind": "reference",
+                  "section": "cash_flows",
+                  "row": "dividends",
+                  "column": "eliminations"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": "internal_borrowing",
+          "label": "Loan received from parent (eliminated)",
+          "decimals": 2,
+          "values": {
+            "parent": {
+              "kind": "fact",
+              "id": "parent_intercompany_loan_received"
+            },
+            "subsidiary": {
+              "kind": "fact",
+              "id": "subsidiary_intercompany_loan_received"
+            },
+            "eliminations": {
+              "kind": "difference",
+              "left": {
+                "kind": "zero",
+                "reason": "No activity under the fictional case policy"
+              },
+              "right": {
+                "kind": "fact",
+                "id": "subsidiary_intercompany_loan_received"
+              }
+            },
+            "consolidated": {
+              "kind": "sum",
+              "terms": [
+                {
+                  "kind": "reference",
+                  "section": "cash_flows",
+                  "row": "internal_borrowing",
+                  "column": "parent"
+                },
+                {
+                  "kind": "reference",
+                  "section": "cash_flows",
+                  "row": "internal_borrowing",
+                  "column": "subsidiary"
+                },
+                {
+                  "kind": "reference",
+                  "section": "cash_flows",
+                  "row": "internal_borrowing",
+                  "column": "eliminations"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": "financing",
+          "label": "Net cash provided by financing activities",
+          "decimals": 2,
+          "values": {
+            "parent": {
+              "kind": "sum",
+              "terms": [
+                {
+                  "kind": "reference",
+                  "section": "cash_flows",
+                  "row": "debt_proceeds",
+                  "column": "parent"
+                },
+                {
+                  "kind": "reference",
+                  "section": "cash_flows",
+                  "row": "debt_repayments",
+                  "column": "parent"
+                },
+                {
+                  "kind": "reference",
+                  "section": "cash_flows",
+                  "row": "dividends",
+                  "column": "parent"
+                },
+                {
+                  "kind": "reference",
+                  "section": "cash_flows",
+                  "row": "internal_borrowing",
+                  "column": "parent"
+                }
+              ]
+            },
+            "subsidiary": {
+              "kind": "sum",
+              "terms": [
+                {
+                  "kind": "reference",
+                  "section": "cash_flows",
+                  "row": "debt_proceeds",
+                  "column": "subsidiary"
+                },
+                {
+                  "kind": "reference",
+                  "section": "cash_flows",
+                  "row": "debt_repayments",
+                  "column": "subsidiary"
+                },
+                {
+                  "kind": "reference",
+                  "section": "cash_flows",
+                  "row": "dividends",
+                  "column": "subsidiary"
+                },
+                {
+                  "kind": "reference",
+                  "section": "cash_flows",
+                  "row": "internal_borrowing",
+                  "column": "subsidiary"
+                }
+              ]
+            },
+            "eliminations": {
+              "kind": "sum",
+              "terms": [
+                {
+                  "kind": "reference",
+                  "section": "cash_flows",
+                  "row": "debt_proceeds",
+                  "column": "eliminations"
+                },
+                {
+                  "kind": "reference",
+                  "section": "cash_flows",
+                  "row": "debt_repayments",
+                  "column": "eliminations"
+                },
+                {
+                  "kind": "reference",
+                  "section": "cash_flows",
+                  "row": "dividends",
+                  "column": "eliminations"
+                },
+                {
+                  "kind": "reference",
+                  "section": "cash_flows",
+                  "row": "internal_borrowing",
+                  "column": "eliminations"
+                }
+              ]
+            },
+            "consolidated": {
+              "kind": "sum",
+              "terms": [
+                {
+                  "kind": "reference",
+                  "section": "cash_flows",
+                  "row": "debt_proceeds",
+                  "column": "consolidated"
+                },
+                {
+                  "kind": "reference",
+                  "section": "cash_flows",
+                  "row": "debt_repayments",
+                  "column": "consolidated"
+                },
+                {
+                  "kind": "reference",
+                  "section": "cash_flows",
+                  "row": "dividends",
+                  "column": "consolidated"
+                },
+                {
+                  "kind": "reference",
+                  "section": "cash_flows",
+                  "row": "internal_borrowing",
+                  "column": "consolidated"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": "net_change",
+          "label": "Increase in cash and restricted cash",
+          "decimals": 2,
+          "values": {
+            "parent": {
+              "kind": "sum",
+              "terms": [
+                {
+                  "kind": "reference",
+                  "section": "cash_flows",
+                  "row": "operating",
+                  "column": "parent"
+                },
+                {
+                  "kind": "reference",
+                  "section": "cash_flows",
+                  "row": "investing",
+                  "column": "parent"
+                },
+                {
+                  "kind": "reference",
+                  "section": "cash_flows",
+                  "row": "financing",
+                  "column": "parent"
+                }
+              ]
+            },
+            "subsidiary": {
+              "kind": "sum",
+              "terms": [
+                {
+                  "kind": "reference",
+                  "section": "cash_flows",
+                  "row": "operating",
+                  "column": "subsidiary"
+                },
+                {
+                  "kind": "reference",
+                  "section": "cash_flows",
+                  "row": "investing",
+                  "column": "subsidiary"
+                },
+                {
+                  "kind": "reference",
+                  "section": "cash_flows",
+                  "row": "financing",
+                  "column": "subsidiary"
+                }
+              ]
+            },
+            "eliminations": {
+              "kind": "sum",
+              "terms": [
+                {
+                  "kind": "reference",
+                  "section": "cash_flows",
+                  "row": "operating",
+                  "column": "eliminations"
+                },
+                {
+                  "kind": "reference",
+                  "section": "cash_flows",
+                  "row": "investing",
+                  "column": "eliminations"
+                },
+                {
+                  "kind": "reference",
+                  "section": "cash_flows",
+                  "row": "financing",
+                  "column": "eliminations"
+                }
+              ]
+            },
+            "consolidated": {
+              "kind": "sum",
+              "terms": [
+                {
+                  "kind": "reference",
+                  "section": "cash_flows",
+                  "row": "operating",
+                  "column": "consolidated"
+                },
+                {
+                  "kind": "reference",
+                  "section": "cash_flows",
+                  "row": "investing",
+                  "column": "consolidated"
+                },
+                {
+                  "kind": "reference",
+                  "section": "cash_flows",
+                  "row": "financing",
+                  "column": "consolidated"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": "beginning",
+          "label": "Cash and restricted cash \u2014 beginning",
+          "decimals": 2,
+          "values": {
+            "parent": {
+              "kind": "sum",
+              "terms": [
+                {
+                  "kind": "fact",
+                  "id": "parent_cash_beginning"
+                },
+                {
+                  "kind": "fact",
+                  "id": "parent_restricted_cash_beginning"
+                }
+              ]
+            },
+            "subsidiary": {
+              "kind": "sum",
+              "terms": [
+                {
+                  "kind": "fact",
+                  "id": "subsidiary_cash_beginning"
+                },
+                {
+                  "kind": "fact",
+                  "id": "subsidiary_restricted_cash_beginning"
+                }
+              ]
+            },
+            "eliminations": {
+              "kind": "zero",
+              "reason": "No activity under the fictional case policy"
+            },
+            "consolidated": {
+              "kind": "sum",
+              "terms": [
+                {
+                  "kind": "reference",
+                  "section": "cash_flows",
+                  "row": "beginning",
+                  "column": "parent"
+                },
+                {
+                  "kind": "reference",
+                  "section": "cash_flows",
+                  "row": "beginning",
+                  "column": "subsidiary"
+                },
+                {
+                  "kind": "reference",
+                  "section": "cash_flows",
+                  "row": "beginning",
+                  "column": "eliminations"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": "ending",
+          "label": "Cash and restricted cash \u2014 ending",
+          "decimals": 2,
+          "values": {
+            "parent": {
+              "kind": "sum",
+              "terms": [
+                {
+                  "kind": "reference",
+                  "section": "cash_flows",
+                  "row": "beginning",
+                  "column": "parent"
+                },
+                {
+                  "kind": "reference",
+                  "section": "cash_flows",
+                  "row": "net_change",
+                  "column": "parent"
+                }
+              ]
+            },
+            "subsidiary": {
+              "kind": "sum",
+              "terms": [
+                {
+                  "kind": "reference",
+                  "section": "cash_flows",
+                  "row": "beginning",
+                  "column": "subsidiary"
+                },
+                {
+                  "kind": "reference",
+                  "section": "cash_flows",
+                  "row": "net_change",
+                  "column": "subsidiary"
+                }
+              ]
+            },
+            "eliminations": {
+              "kind": "sum",
+              "terms": [
+                {
+                  "kind": "reference",
+                  "section": "cash_flows",
+                  "row": "beginning",
+                  "column": "eliminations"
+                },
+                {
+                  "kind": "reference",
+                  "section": "cash_flows",
+                  "row": "net_change",
+                  "column": "eliminations"
+                }
+              ]
+            },
+            "consolidated": {
+              "kind": "sum",
+              "terms": [
+                {
+                  "kind": "reference",
+                  "section": "cash_flows",
+                  "row": "beginning",
+                  "column": "consolidated"
+                },
+                {
+                  "kind": "reference",
+                  "section": "cash_flows",
+                  "row": "net_change",
+                  "column": "consolidated"
+                }
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "cash_components",
+      "title": "Cash and restricted cash reconciliation (USD)",
+      "rows": [
+        {
+          "id": "cash_beginning",
+          "label": "Unrestricted cash \u2014 beginning",
+          "decimals": 2,
+          "values": {
+            "consolidated": {
+              "kind": "sum",
+              "terms": [
+                {
+                  "kind": "fact",
+                  "id": "parent_cash_beginning"
+                },
+                {
+                  "kind": "fact",
+                  "id": "subsidiary_cash_beginning"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": "restricted_beginning",
+          "label": "Restricted cash \u2014 beginning",
+          "decimals": 2,
+          "values": {
+            "consolidated": {
+              "kind": "sum",
+              "terms": [
+                {
+                  "kind": "fact",
+                  "id": "parent_restricted_cash_beginning"
+                },
+                {
+                  "kind": "fact",
+                  "id": "subsidiary_restricted_cash_beginning"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": "total_beginning",
+          "label": "Combined cash \u2014 beginning",
+          "decimals": 2,
+          "values": {
+            "consolidated": {
+              "kind": "sum",
+              "terms": [
+                {
+                  "kind": "reference",
+                  "section": "cash_components",
+                  "row": "cash_beginning",
+                  "column": "consolidated"
+                },
+                {
+                  "kind": "reference",
+                  "section": "cash_components",
+                  "row": "restricted_beginning",
+                  "column": "consolidated"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": "cash_ending",
+          "label": "Unrestricted cash \u2014 ending",
+          "decimals": 2,
+          "values": {
+            "consolidated": {
+              "kind": "sum",
+              "terms": [
+                {
+                  "kind": "fact",
+                  "id": "parent_cash_ending"
+                },
+                {
+                  "kind": "fact",
+                  "id": "subsidiary_cash_ending"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": "restricted_ending",
+          "label": "Restricted cash \u2014 ending",
+          "decimals": 2,
+          "values": {
+            "consolidated": {
+              "kind": "sum",
+              "terms": [
+                {
+                  "kind": "fact",
+                  "id": "parent_restricted_cash_ending"
+                },
+                {
+                  "kind": "fact",
+                  "id": "subsidiary_restricted_cash_ending"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": "total_ending",
+          "label": "Combined cash \u2014 ending",
+          "decimals": 2,
+          "values": {
+            "consolidated": {
+              "kind": "sum",
+              "terms": [
+                {
+                  "kind": "reference",
+                  "section": "cash_components",
+                  "row": "cash_ending",
+                  "column": "consolidated"
+                },
+                {
+                  "kind": "reference",
+                  "section": "cash_components",
+                  "row": "restricted_ending",
+                  "column": "consolidated"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": "cash_change",
+          "label": "Increase in unrestricted cash",
+          "decimals": 2,
+          "values": {
+            "consolidated": {
+              "kind": "difference",
+              "left": {
+                "kind": "reference",
+                "section": "cash_components",
+                "row": "cash_ending",
+                "column": "consolidated"
+              },
+              "right": {
+                "kind": "reference",
+                "section": "cash_components",
+                "row": "cash_beginning",
+                "column": "consolidated"
+              }
+            }
+          }
+        },
+        {
+          "id": "restricted_change",
+          "label": "Increase in restricted cash",
+          "decimals": 2,
+          "values": {
+            "consolidated": {
+              "kind": "difference",
+              "left": {
+                "kind": "reference",
+                "section": "cash_components",
+                "row": "restricted_ending",
+                "column": "consolidated"
+              },
+              "right": {
+                "kind": "reference",
+                "section": "cash_components",
+                "row": "restricted_beginning",
+                "column": "consolidated"
+              }
+            }
+          }
+        },
+        {
+          "id": "combined_change",
+          "label": "Combined cash increase (transfers excluded from activities)",
+          "decimals": 2,
+          "values": {
+            "consolidated": {
+              "kind": "sum",
+              "terms": [
+                {
+                  "kind": "reference",
+                  "section": "cash_components",
+                  "row": "cash_change",
+                  "column": "consolidated"
+                },
+                {
+                  "kind": "reference",
+                  "section": "cash_components",
+                  "row": "restricted_change",
+                  "column": "consolidated"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": "bank_confirmation",
+          "label": "Separate fictional bank control \u2014 combined cash ending",
+          "decimals": 2,
+          "values": {
+            "consolidated": {
+              "kind": "fact",
+              "id": "bank_cash_and_restricted_cash_ending"
+            }
+          }
+        },
+        {
+          "id": "bank_difference",
+          "label": "Unresolved difference: ledger less bank control",
+          "decimals": 2,
+          "values": {
+            "consolidated": {
+              "kind": "difference",
+              "left": {
+                "kind": "reference",
+                "section": "cash_components",
+                "row": "total_ending",
+                "column": "consolidated"
+              },
+              "right": {
+                "kind": "reference",
+                "section": "cash_components",
+                "row": "bank_confirmation",
+                "column": "consolidated"
+              }
+            }
+          }
+        }
+      ],
+      "columns": [
+        "consolidated"
+      ]
+    },
+    {
+      "id": "supplemental",
+      "title": "Supplemental cash flow disclosures (USD)",
+      "rows": [
+        {
+          "id": "noncash_equipment",
+          "label": "Equipment acquired directly by issuing seller note (no cash)",
+          "decimals": 2,
+          "values": {
+            "consolidated": {
+              "kind": "sum",
+              "terms": [
+                {
+                  "kind": "fact",
+                  "id": "parent_noncash_equipment_seller_note"
+                },
+                {
+                  "kind": "fact",
+                  "id": "subsidiary_noncash_equipment_seller_note"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": "interest_paid",
+          "label": "Cash interest paid (included in operating cash flows)",
+          "decimals": 2,
+          "values": {
+            "consolidated": {
+              "kind": "sum",
+              "terms": [
+                {
+                  "kind": "fact",
+                  "id": "parent_cash_interest_paid"
+                },
+                {
+                  "kind": "fact",
+                  "id": "subsidiary_cash_interest_paid"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": "taxes_paid",
+          "label": "Cash income taxes paid (included in operating cash flows)",
+          "decimals": 2,
+          "values": {
+            "consolidated": {
+              "kind": "sum",
+              "terms": [
+                {
+                  "kind": "fact",
+                  "id": "parent_cash_income_taxes_paid"
+                },
+                {
+                  "kind": "fact",
+                  "id": "subsidiary_cash_income_taxes_paid"
+                }
+              ]
+            }
+          }
+        }
+      ],
+      "columns": [
+        "consolidated"
+      ]
+    },
+    {
+      "id": "external_debt",
+      "title": "External debt rollforward \u2014 intercompany debt excluded (USD)",
+      "rows": [
+        {
+          "id": "beginning",
+          "label": "External debt \u2014 beginning",
+          "decimals": 2,
+          "values": {
+            "consolidated": {
+              "kind": "sum",
+              "terms": [
+                {
+                  "kind": "fact",
+                  "id": "parent_external_debt_beginning"
+                },
+                {
+                  "kind": "fact",
+                  "id": "subsidiary_external_debt_beginning"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": "cash_proceeds",
+          "label": "External cash borrowings",
+          "decimals": 2,
+          "values": {
+            "consolidated": {
+              "kind": "reference",
+              "section": "cash_flows",
+              "row": "debt_proceeds",
+              "column": "consolidated"
+            }
+          }
+        },
+        {
+          "id": "cash_repayments",
+          "label": "External principal repayments",
+          "decimals": 2,
+          "values": {
+            "consolidated": {
+              "kind": "reference",
+              "section": "cash_flows",
+              "row": "debt_repayments",
+              "column": "consolidated"
+            }
+          }
+        },
+        {
+          "id": "seller_note",
+          "label": "Noncash seller note issued for equipment",
+          "decimals": 2,
+          "values": {
+            "consolidated": {
+              "kind": "reference",
+              "section": "supplemental",
+              "row": "noncash_equipment",
+              "column": "consolidated"
+            }
+          }
+        },
+        {
+          "id": "ending",
+          "label": "External debt \u2014 ending",
+          "decimals": 2,
+          "values": {
+            "consolidated": {
+              "kind": "sum",
+              "terms": [
+                {
+                  "kind": "reference",
+                  "section": "external_debt",
+                  "row": "beginning",
+                  "column": "consolidated"
+                },
+                {
+                  "kind": "reference",
+                  "section": "external_debt",
+                  "row": "cash_proceeds",
+                  "column": "consolidated"
+                },
+                {
+                  "kind": "reference",
+                  "section": "external_debt",
+                  "row": "cash_repayments",
+                  "column": "consolidated"
+                },
+                {
+                  "kind": "reference",
+                  "section": "external_debt",
+                  "row": "seller_note",
+                  "column": "consolidated"
+                }
+              ]
+            }
+          }
+        }
+      ],
+      "columns": [
+        "consolidated"
+      ]
+    },
+    {
+      "id": "equipment_rollforward",
+      "title": "Net equipment rollforward (USD)",
+      "rows": [
+        {
+          "id": "beginning",
+          "label": "Net equipment \u2014 beginning",
+          "decimals": 2,
+          "values": {
+            "consolidated": {
+              "kind": "sum",
+              "terms": [
+                {
+                  "kind": "fact",
+                  "id": "parent_ppe_net_beginning"
+                },
+                {
+                  "kind": "fact",
+                  "id": "subsidiary_ppe_net_beginning"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": "cash_purchases",
+          "label": "Cash equipment purchases",
+          "decimals": 2,
+          "values": {
+            "consolidated": {
+              "kind": "difference",
+              "left": {
+                "kind": "zero",
+                "reason": "No activity under the fictional case policy"
+              },
+              "right": {
+                "kind": "reference",
+                "section": "cash_flows",
+                "row": "equipment",
+                "column": "consolidated"
+              }
+            }
+          }
+        },
+        {
+          "id": "noncash_purchases",
+          "label": "Noncash equipment purchased with seller note",
+          "decimals": 2,
+          "values": {
+            "consolidated": {
+              "kind": "reference",
+              "section": "supplemental",
+              "row": "noncash_equipment",
+              "column": "consolidated"
+            }
+          }
+        },
+        {
+          "id": "depreciation",
+          "label": "Depreciation",
+          "decimals": 2,
+          "values": {
+            "consolidated": {
+              "kind": "difference",
+              "left": {
+                "kind": "zero",
+                "reason": "No activity under the fictional case policy"
+              },
+              "right": {
+                "kind": "reference",
+                "section": "cash_flows",
+                "row": "depreciation",
+                "column": "consolidated"
+              }
+            }
+          }
+        },
+        {
+          "id": "ending",
+          "label": "Net equipment \u2014 ending",
+          "decimals": 2,
+          "values": {
+            "consolidated": {
+              "kind": "sum",
+              "terms": [
+                {
+                  "kind": "reference",
+                  "section": "equipment_rollforward",
+                  "row": "beginning",
+                  "column": "consolidated"
+                },
+                {
+                  "kind": "reference",
+                  "section": "equipment_rollforward",
+                  "row": "cash_purchases",
+                  "column": "consolidated"
+                },
+                {
+                  "kind": "reference",
+                  "section": "equipment_rollforward",
+                  "row": "noncash_purchases",
+                  "column": "consolidated"
+                },
+                {
+                  "kind": "reference",
+                  "section": "equipment_rollforward",
+                  "row": "depreciation",
+                  "column": "consolidated"
+                }
+              ]
+            }
+          }
+        }
+      ],
+      "columns": [
+        "consolidated"
+      ]
+    }
+  ],
+  "checks": [
+    {
+      "id": "parent_cash_bridge",
+      "left": {
+        "kind": "reference",
+        "section": "cash_flows",
+        "row": "ending",
+        "column": "parent"
+      },
+      "right": {
+        "kind": "sum",
+        "terms": [
+          {
+            "kind": "fact",
+            "id": "parent_cash_ending"
+          },
+          {
+            "kind": "fact",
+            "id": "parent_restricted_cash_ending"
+          }
+        ]
+      }
+    },
+    {
+      "id": "subsidiary_cash_bridge",
+      "left": {
+        "kind": "reference",
+        "section": "cash_flows",
+        "row": "ending",
+        "column": "subsidiary"
+      },
+      "right": {
+        "kind": "sum",
+        "terms": [
+          {
+            "kind": "fact",
+            "id": "subsidiary_cash_ending"
+          },
+          {
+            "kind": "fact",
+            "id": "subsidiary_restricted_cash_ending"
+          }
+        ]
+      }
+    },
+    {
+      "id": "intercompany_legs_match",
+      "left": {
+        "kind": "fact",
+        "id": "parent_intercompany_loan_advanced"
+      },
+      "right": {
+        "kind": "fact",
+        "id": "subsidiary_intercompany_loan_received"
+      }
+    },
+    {
+      "id": "internal_lending_eliminated",
+      "left": {
+        "kind": "reference",
+        "section": "cash_flows",
+        "row": "internal_lending",
+        "column": "consolidated"
+      },
+      "right": {
+        "kind": "zero",
+        "reason": "Intragroup lending excluded from consolidated cash flows"
+      }
+    },
+    {
+      "id": "internal_borrowing_eliminated",
+      "left": {
+        "kind": "reference",
+        "section": "cash_flows",
+        "row": "internal_borrowing",
+        "column": "consolidated"
+      },
+      "right": {
+        "kind": "zero",
+        "reason": "Intragroup borrowing excluded from consolidated cash flows"
+      }
+    },
+    {
+      "id": "cash_only_equipment",
+      "left": {
+        "kind": "reference",
+        "section": "cash_flows",
+        "row": "equipment",
+        "column": "consolidated"
+      },
+      "right": {
+        "kind": "difference",
+        "left": {
+          "kind": "zero",
+          "reason": "No activity under the fictional case policy"
+        },
+        "right": {
+          "kind": "sum",
+          "terms": [
+            {
+              "kind": "fact",
+              "id": "parent_cash_equipment_purchases"
+            },
+            {
+              "kind": "fact",
+              "id": "subsidiary_cash_equipment_purchases"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "cash_only_borrowings",
+      "left": {
+        "kind": "reference",
+        "section": "cash_flows",
+        "row": "debt_proceeds",
+        "column": "consolidated"
+      },
+      "right": {
+        "kind": "sum",
+        "terms": [
+          {
+            "kind": "fact",
+            "id": "parent_external_debt_proceeds"
+          },
+          {
+            "kind": "fact",
+            "id": "subsidiary_external_debt_proceeds"
+          }
+        ]
+      }
+    },
+    {
+      "id": "combined_opening",
+      "left": {
+        "kind": "reference",
+        "section": "cash_flows",
+        "row": "beginning",
+        "column": "consolidated"
+      },
+      "right": {
+        "kind": "reference",
+        "section": "cash_components",
+        "row": "total_beginning",
+        "column": "consolidated"
+      }
+    },
+    {
+      "id": "combined_closing",
+      "left": {
+        "kind": "reference",
+        "section": "cash_flows",
+        "row": "ending",
+        "column": "consolidated"
+      },
+      "right": {
+        "kind": "reference",
+        "section": "cash_components",
+        "row": "total_ending",
+        "column": "consolidated"
+      }
+    },
+    {
+      "id": "combined_movement",
+      "left": {
+        "kind": "reference",
+        "section": "cash_flows",
+        "row": "net_change",
+        "column": "consolidated"
+      },
+      "right": {
+        "kind": "reference",
+        "section": "cash_components",
+        "row": "combined_change",
+        "column": "consolidated"
+      }
+    },
+    {
+      "id": "external_debt_bridge",
+      "left": {
+        "kind": "reference",
+        "section": "external_debt",
+        "row": "ending",
+        "column": "consolidated"
+      },
+      "right": {
+        "kind": "sum",
+        "terms": [
+          {
+            "kind": "fact",
+            "id": "parent_external_debt_ending"
+          },
+          {
+            "kind": "fact",
+            "id": "subsidiary_external_debt_ending"
+          }
+        ]
+      }
+    },
+    {
+      "id": "equipment_bridge",
+      "left": {
+        "kind": "reference",
+        "section": "equipment_rollforward",
+        "row": "ending",
+        "column": "consolidated"
+      },
+      "right": {
+        "kind": "sum",
+        "terms": [
+          {
+            "kind": "fact",
+            "id": "parent_ppe_net_ending"
+          },
+          {
+            "kind": "fact",
+            "id": "subsidiary_ppe_net_ending"
+          }
+        ]
+      }
+    }
+  ],
+  "source_reconciliations": [
+    {
+      "id": "ledger_to_bank",
+      "left": {
+        "kind": "reference",
+        "section": "cash_components",
+        "row": "total_ending",
+        "column": "consolidated"
+      },
+      "right": {
+        "kind": "reference",
+        "section": "cash_components",
+        "row": "bank_confirmation",
+        "column": "consolidated"
+      }
+    }
+  ]
+}

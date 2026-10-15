@@ -1,0 +1,54 @@
+{
+  "description": "Hand-authored expected values, frozen separately from the manifest/compiler. All amounts USD. Changes require accounting review.",
+  "cash_flows": {
+    "net_income": {"parent": "70000", "subsidiary": "35000", "eliminations": "0", "consolidated": "105000"},
+    "depreciation": {"parent": "20000", "subsidiary": "10000", "eliminations": "0", "consolidated": "30000"},
+    "receivables": {"parent": "-12000", "subsidiary": "-4000", "eliminations": "0", "consolidated": "-16000"},
+    "inventory": {"parent": "-5000", "subsidiary": "-2000", "eliminations": "0", "consolidated": "-7000"},
+    "payables": {"parent": "7000", "subsidiary": "11000", "eliminations": "0", "consolidated": "18000"},
+    "operating": {"parent": "80000", "subsidiary": "50000", "eliminations": "0", "consolidated": "130000"},
+    "equipment": {"parent": "-60000", "subsidiary": "-20000", "eliminations": "0", "consolidated": "-80000"},
+    "internal_lending": {"parent": "-20000", "subsidiary": "0", "eliminations": "20000", "consolidated": "0"},
+    "investing": {"parent": "-80000", "subsidiary": "-20000", "eliminations": "20000", "consolidated": "-80000"},
+    "debt_proceeds": {"parent": "50000", "subsidiary": "0", "eliminations": "0", "consolidated": "50000"},
+    "debt_repayments": {"parent": "-15000", "subsidiary": "-5000", "eliminations": "0", "consolidated": "-20000"},
+    "dividends": {"parent": "-10000", "subsidiary": "0", "eliminations": "0", "consolidated": "-10000"},
+    "internal_borrowing": {"parent": "0", "subsidiary": "20000", "eliminations": "-20000", "consolidated": "0"},
+    "financing": {"parent": "25000", "subsidiary": "15000", "eliminations": "-20000", "consolidated": "20000"},
+    "net_change": {"parent": "25000", "subsidiary": "45000", "eliminations": "0", "consolidated": "70000"},
+    "beginning": {"parent": "100000", "subsidiary": "50000", "eliminations": "0", "consolidated": "150000"},
+    "ending": {"parent": "125000", "subsidiary": "95000", "eliminations": "0", "consolidated": "220000"}
+  },
+  "cash_components": {
+    "cash_beginning": {"consolidated": "135000"},
+    "restricted_beginning": {"consolidated": "15000"},
+    "total_beginning": {"consolidated": "150000"},
+    "cash_ending": {"consolidated": "185000"},
+    "restricted_ending": {"consolidated": "35000"},
+    "total_ending": {"consolidated": "220000"},
+    "cash_change": {"consolidated": "50000"},
+    "restricted_change": {"consolidated": "20000"},
+    "combined_change": {"consolidated": "70000"},
+    "bank_confirmation": {"consolidated": "220000"},
+    "bank_difference": {"consolidated": "0"}
+  },
+  "supplemental": {
+    "noncash_equipment": {"consolidated": "30000"},
+    "interest_paid": {"consolidated": "5000"},
+    "taxes_paid": {"consolidated": "10000"}
+  },
+  "external_debt": {
+    "beginning": {"consolidated": "120000"},
+    "cash_proceeds": {"consolidated": "50000"},
+    "cash_repayments": {"consolidated": "-20000"},
+    "seller_note": {"consolidated": "30000"},
+    "ending": {"consolidated": "180000"}
+  },
+  "equipment_rollforward": {
+    "beginning": {"consolidated": "300000"},
+    "cash_purchases": {"consolidated": "80000"},
+    "noncash_purchases": {"consolidated": "30000"},
+    "depreciation": {"consolidated": "-30000"},
+    "ending": {"consolidated": "380000"}
+  }
+}
